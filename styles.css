@@ -1,0 +1,12 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    outline: 1px solid green;
+    margin-top: 10px;
+}
+
+.text-block {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
