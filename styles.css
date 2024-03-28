@@ -3,6 +3,7 @@
     margin: 0 auto;
     outline: 1px solid green;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 
 .text-block {

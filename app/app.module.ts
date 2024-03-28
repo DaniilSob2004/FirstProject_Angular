@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProviderComponent } from './provider/provider.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    ProviderComponent
   ],
   imports: [
     BrowserModule,
