@@ -10,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'  // набор стилей
 })
 export class AppComponent {
-  title = 'FirstProject';
+  title: string = 'FirstProject';
 }

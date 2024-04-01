@@ -1,0 +1,62 @@
+<hr>
+<button (click)="showEvent($event)">Show event</button>
+<hr>
+<button *ngIf="isVisible" (click)="toggleP()">Hide</button>
+<button *ngIf="!isVisible" (click)="toggleP()">Show</button>
+<p *ngIf="isVisible">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum,
+    necessitatibus ex autem velit, repellendus, suscipit ratione optio nemo
+    dolores placeat quaerat sunt ipsam dolore.
+</p>
+<hr>
+
+<div>
+    <input type="text" [(ngModel)]="userName">
+    <span>{{userName}}</span>
+</div>
+
+<div>
+    <button
+        (click)="bold()" [ngClass]="{bold:isBold}">Bold
+    </button>
+    <button
+        (click)="italic()" [ngClass]="{italic:isItalic}">Italic
+    </button>
+    <button
+        (click)="underline()" [ngClass]="{underline:isUnderline}">Underline
+    </button>
+    <button
+        (click)="uppercase()" [ngClass]="{uppercase:isUppercase}">Uppercase
+    </button>
+
+    <select [(ngModel)]="fontSize">
+        <option value="12">12</option>
+        <option value="24">24</option>
+        <option value="32">32</option>
+        <option value="64">64</option>
+    </select>
+
+    <select [(ngModel)]="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <input type="color" [(ngModel)]="color">
+</div>
+<textarea
+    rows="5"
+    style="box-sizing: border-box; width: 100%;"
+    [ngClass]="{
+        bold: isBold,
+        italic: isItalic,
+        underline: isUnderline,
+        uppercase: isUppercase
+    }"
+    [ngStyle]="{
+        'font-size': fontSize + 'px',
+        'font-family': fontFamily,
+        'color': color
+    }">
+</textarea>

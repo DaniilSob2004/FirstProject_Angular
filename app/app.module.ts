@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProviderComponent } from './provider/provider.component';
+import { PwBindingComponent } from './pw-binding/pw-binding.component';
+import { FormsModule } from '@angular/forms';
+import { BookComponent } from './book/book.component';
+import { SeeWorldComponent } from './see-world/see-world.component';
+import { DealsDestComponent } from './deals-dest/deals-dest.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -26,15 +31,20 @@ import { ProviderComponent } from './provider/provider.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    ProviderComponent
+    ProviderComponent,
+    PwBindingComponent,
+    BookComponent,
+    SeeWorldComponent,
+    DealsDestComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule,  // для использования модели браузера
+    AppRoutingModule,  // маршрутизация, навигация
+    FormsModule  // для 2-ух сторонней привязке
   ],
   providers: [
     provideClientHydration()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]  // самый первый подключенный компонент
 })
 export class AppModule { }
