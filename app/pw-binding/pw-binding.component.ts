@@ -8,13 +8,6 @@ import { Component } from '@angular/core';
 export class PwBindingComponent {
   userName: string = "";
   isVisible: boolean = true;
-  isBold: boolean = false;
-  isItalic: boolean = false;
-  isUnderline: boolean = false;
-  isUppercase: boolean = false;
-  fontSize: number = 32;
-  fontFamily: string = "Arial";
-  color: string = "#000"
 
   constructor() {
     this.userName = "Daniil";
@@ -26,21 +19,5 @@ export class PwBindingComponent {
 
   toggleP() {
     this.isVisible = !this.isVisible;
-  }
-
-  bold() {
-    this.isBold = !this.isBold;
-  }
-
-  italic() {
-    this.isItalic = !this.isItalic;
-  }
-
-  underline() {
-    this.isUnderline = !this.isUnderline;
-  }
-
-  uppercase() {
-    this.isUppercase = !this.isUppercase;
   }
 }

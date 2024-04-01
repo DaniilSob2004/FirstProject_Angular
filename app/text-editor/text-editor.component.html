@@ -1,0 +1,45 @@
+<div class="panel-block">
+    <button
+        (click)="bold()" [ngClass]="{bold:isBold}">B
+    </button>
+    <button
+        (click)="italic()" [ngClass]="{italic:isItalic}">I
+    </button>
+    <button
+        (click)="underline()" [ngClass]="{underline:isUnderline}">U
+    </button>
+    <button
+        (click)="uppercase()" [ngClass]="{uppercase:isUppercase}">Tt
+    </button>
+
+    <select [(ngModel)]="fontSize">
+        <option value="12">12</option>
+        <option value="24">24</option>
+        <option value="32">32</option>
+        <option value="64">64</option>
+    </select>
+
+    <select [(ngModel)]="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <input type="color" [(ngModel)]="color">
+</div>
+<textarea
+    rows="5"
+    class="texteditor"
+    [ngClass]="{
+        bold: isBold,
+        italic: isItalic,
+        underline: isUnderline,
+        uppercase: isUppercase
+    }"
+    [ngStyle]="{
+        'font-size': fontSize + 'px',
+        'font-family': fontFamily,
+        'color': color
+    }">
+</textarea>

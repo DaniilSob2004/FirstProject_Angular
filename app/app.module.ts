@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { BookComponent } from './book/book.component';
 import { SeeWorldComponent } from './see-world/see-world.component';
 import { DealsDestComponent } from './deals-dest/deals-dest.component';
+import { TextEditorComponent } from './text-editor/text-editor.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -35,7 +36,8 @@ import { DealsDestComponent } from './deals-dest/deals-dest.component';
     PwBindingComponent,
     BookComponent,
     SeeWorldComponent,
-    DealsDestComponent
+    DealsDestComponent,
+    TextEditorComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
