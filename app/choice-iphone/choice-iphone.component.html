@@ -1,0 +1,21 @@
+<section>
+    <div class="img-block">
+        <img src="assets/images/{{choiceColor}}_iphone15.jpg" alt="img-iphone">
+    </div>
+    <div class="title-block">
+        <span>
+            6.7" Iphone 15 Plus and 6.1" Iphone 15 in {{choiceColor.charAt(0).toUpperCase() + choiceColor.slice(1)}}
+        </span>
+    </div>
+    <div class="colors-block">
+        <div *ngFor="let color of colors"
+            (click)="choice(color)"
+            [ngClass]="{
+                'choice-color': choiceColor === color
+            }"
+            [ngStyle]="{
+                'background-color': color
+            }">
+        </div>
+    </div>
+</section>

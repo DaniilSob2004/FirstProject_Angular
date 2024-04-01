@@ -1,6 +1,6 @@
-<hr>
 <button (click)="showEvent($event)">Show event</button>
 <hr>
+
 <button *ngIf="isVisible" (click)="toggleP()">Hide</button>
 <button *ngIf="!isVisible" (click)="toggleP()">Show</button>
 <p *ngIf="isVisible">
@@ -12,5 +12,5 @@
 
 <div>
     <input type="text" [(ngModel)]="userName">
-    <span>{{userName}}</span>
+    <span> {{userName}}</span>
 </div>

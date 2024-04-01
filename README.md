@@ -1,3 +1,7 @@
+  - HW 3.3
+
+![hw_3_3](https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/af37b790-7701-4cc1-acc6-12263800aa12)
+
   - HW 3.2
 
 ![hw_3_2](https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/97f30db8-1aed-4671-9a9b-2c8f8548294f)

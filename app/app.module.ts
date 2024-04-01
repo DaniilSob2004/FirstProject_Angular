@@ -13,6 +13,7 @@ import { BookComponent } from './book/book.component';
 import { SeeWorldComponent } from './see-world/see-world.component';
 import { DealsDestComponent } from './deals-dest/deals-dest.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
+import { ChoiceIphoneComponent } from './choice-iphone/choice-iphone.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -37,7 +38,8 @@ import { TextEditorComponent } from './text-editor/text-editor.component';
     BookComponent,
     SeeWorldComponent,
     DealsDestComponent,
-    TextEditorComponent
+    TextEditorComponent,
+    ChoiceIphoneComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
