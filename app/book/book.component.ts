@@ -10,27 +10,38 @@ export class BookComponent {
     {
       title: "Бегущий в лабиринте",
       year: 2000,
-      img: "assets/img/book1.png",
+      price: 199,
+      img: "assets/images/book1.jpg",
       author: "Thomas"
     },
     {
       title: "Шерлок Холмс",
       year: 1999,
-      img: "assets/img/book2.png",
+      price: 899,
+      img: "assets/images/book2.jpg",
       author: "Bob"
     },
     {
       title: ".Net Framework",
       year: 2015,
-      img: "assets/img/book3.png",
+      price: 349,
+      img: "assets/images/book3.jpg",
       author: "Daniil"
     },
     {
       title: "C++",
       year: 2010,
-      img: "assets/img/book4.png",
+      price: 99,
+      img: "assets/images/book4.jpg",
       author: "Andrey"
     },
   ];
   selectedBook: any = this.books[0];
+
+  choice(book: any) {
+    if (book && book !== this.selectedBook)
+    {
+      this.selectedBook = book; 
+    }
+  }
 }

@@ -5,10 +5,14 @@
     padding-top: 0;
 }
 
+.selected {
+    color: gray;
+}
+
 .content-block {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 58%;
 }
 
 .content {
@@ -30,5 +34,11 @@
 .choice-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+.choice-content img {
+    width: 175px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 8px;
 }

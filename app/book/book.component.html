@@ -1,13 +1,18 @@
 <h2>Books</h2>
 <div class="flex-container">
     <div class="content-block">
-        <div class="content" *ngFor="let book of books;">
+        <div class="content" *ngFor="let book of books;"
+            (click)="choice(book)"
+            [ngClass]="{ selected: selectedBook === book }">
             <span class="index">{{book.title}}</span>
             <span>{{book.author}}</span>
         </div>
     </div>
     <div class="choice-content">
-        <span class="index">Name</span>
-        <span>Author</span>
+        <img src={{selectedBook.img}} alt="img-book">
+        <span class="index">{{selectedBook.title}}</span>
+        <span>{{selectedBook.author}}</span>
+        <span>{{selectedBook.year}}</span>
+        <span>₴{{selectedBook.price}}</span>
     </div>
 </div>
