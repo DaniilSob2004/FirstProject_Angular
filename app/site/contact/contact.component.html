@@ -1,0 +1,9 @@
+<button (click)="showMap()">
+    @if(isVisible) { <span>-</span> }
+    @else { <span>+</span> }
+</button>
+@if(isVisible) {
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.166401053149!2d30.668455876867167!3d46.465211871108046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6320b7ec09bff%3A0xaa01923331cec4d6!2z0JTQsNC70YzQvdGP0Y8g0YPQuy4sIDI0LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1712074115795!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+}

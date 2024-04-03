@@ -1,6 +1,25 @@
-<div class="container">
-    <app-header></app-header>
-</div>
+<header>
+    <div class="container">
+        <app-header></app-header>
+        <nav>
+            <ul>
+                <li><a
+                    routerLink=""
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">Home
+                </a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                <li><a routerLink="/features" routerLinkActive="active">Features</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <router-outlet />  <!-- вывод компонентов указанных в маршруте 'app-routing.module.ts' -->
+    </div>
+</main>
+
 
 <div class="container">
     <app-pw-binding></app-pw-binding>
@@ -23,10 +42,6 @@
 </div>
 
 <div class="container">
-    <app-deals-dest></app-deals-dest>
-</div>
-
-<div class="container">
     <app-provider></app-provider>
 </div>
 
@@ -37,5 +52,3 @@
 <div class="container">
     <app-footer></app-footer>
 </div>
-
-<router-outlet />

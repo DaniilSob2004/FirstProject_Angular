@@ -11,9 +11,11 @@ import { PwBindingComponent } from './pw-binding/pw-binding.component';
 import { FormsModule } from '@angular/forms';
 import { BookComponent } from './book/book.component';
 import { SeeWorldComponent } from './see-world/see-world.component';
-import { DealsDestComponent } from './deals-dest/deals-dest.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { ChoiceIphoneComponent } from './choice-iphone/choice-iphone.component';
+import { HomeComponent } from './site/home/home.component';
+import { ContactComponent } from './site/contact/contact.component';
+import { FeaturesComponent } from './site/features/features.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -37,9 +39,11 @@ import { ChoiceIphoneComponent } from './choice-iphone/choice-iphone.component';
     PwBindingComponent,
     BookComponent,
     SeeWorldComponent,
-    DealsDestComponent,
     TextEditorComponent,
-    ChoiceIphoneComponent
+    ChoiceIphoneComponent,
+    HomeComponent,
+    ContactComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
