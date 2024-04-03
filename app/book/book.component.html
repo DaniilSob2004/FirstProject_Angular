@@ -1,7 +1,7 @@
 <h2>Books</h2>
 <div class="flex-container">
     <div class="content-block">
-        <div class="content" *ngFor="let book of books;"
+        <div class="content" *ngFor="let book of books"
             (click)="choice(book)"
             [ngClass]="{ selected: selectedBook === book }">
             <span class="index">{{book.title}}</span>

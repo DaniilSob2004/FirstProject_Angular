@@ -7,6 +7,9 @@ import { FeaturesComponent } from './site/features/features.component';
 import { AboutUsComponent } from './site/about-us/about-us.component';
 import { PetsComponent } from './site/pets/pets.component';
 
+// Определяет маршруты приложения.
+// Каждый объект Route содержит инфу о том, как соответ. URL-адрес должен
+// быть сопоставлен с компонентом Angular
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "contact", component: ContactComponent },

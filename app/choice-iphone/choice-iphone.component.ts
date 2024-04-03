@@ -15,6 +15,10 @@ export class ChoiceIphoneComponent {
   ];
   choiceColor: string = this.colors[0];
 
+  capitalize(color: string): string {
+    return color.charAt(0).toUpperCase() + color.slice(1);
+  }
+
   choice(color: string) {
     if (this.choiceColor !== color) {
       this.choiceColor = color;

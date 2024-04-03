@@ -11,9 +11,9 @@ export class PetsComponent {
   pets: any[] = pets;
 
   getAge(birthYear: number): string {
-    const curYear = new Date().getFullYear();
+    const curYear = new Date().getFullYear();  // текущий год
     return (birthYear !== curYear) ?
-      (curYear - birthYear).toString() :
+      (curYear - birthYear).toString() :  // возраст
       "not a year old yet";
   }
 }
