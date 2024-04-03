@@ -1,54 +1,44 @@
 <header>
-    <div class="container">
+    <div class="my-container">
         <app-header></app-header>
-        <nav>
-            <ul>
-                <li><a
-                    routerLink=""
-                    routerLinkActive="active"
-                    [routerLinkActiveOptions]="{exact:true}">Home
-                </a></li>
-                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-                <li><a routerLink="/features" routerLinkActive="active">Features</a></li>
-            </ul>
-        </nav>
+        <app-nav-menu></app-nav-menu>
     </div>
 </header>
 <main>
-    <div class="container">
+    <div class="my-container">
         <router-outlet />  <!-- вывод компонентов указанных в маршруте 'app-routing.module.ts' -->
     </div>
 </main>
 
 
-<div class="container">
+<div class="my-container">
     <app-pw-binding></app-pw-binding>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-choice-iphone></app-choice-iphone>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-text-editor></app-text-editor>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-book></app-book>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-see-world></app-see-world>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-provider></app-provider>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-content></app-content>
 </div>
 
-<div class="container">
+<div class="my-container">
     <app-footer></app-footer>
 </div>

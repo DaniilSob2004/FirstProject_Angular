@@ -16,6 +16,7 @@ import { ChoiceIphoneComponent } from './choice-iphone/choice-iphone.component';
 import { HomeComponent } from './site/home/home.component';
 import { ContactComponent } from './site/contact/contact.component';
 import { FeaturesComponent } from './site/features/features.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -43,7 +44,8 @@ import { FeaturesComponent } from './site/features/features.component';
     ChoiceIphoneComponent,
     HomeComponent,
     ContactComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера

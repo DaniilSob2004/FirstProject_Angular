@@ -1,13 +1,14 @@
 .panel-block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
-    width: 48%;
-    min-width: 400px;
+    width: 50%;
+    min-width: 415px;
 }
 .panel-block button {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 .panel-block button, select, input {
     background-color: #E5E5E5;
