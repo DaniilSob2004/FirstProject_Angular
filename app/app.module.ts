@@ -20,6 +20,8 @@ import { FeaturesComponent } from './site/features/features.component';
 import { NavMenuComponent } from './site/nav-menu/nav-menu.component';
 import { AboutUsComponent } from './site/about-us/about-us.component';
 import { PetsComponent } from './site/pets/pets.component';
+import { UsersComponent } from './site/users/users.component';
+import { UserComponent } from './site/user/user.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -50,7 +52,9 @@ import { PetsComponent } from './site/pets/pets.component';
     FeaturesComponent,
     NavMenuComponent,
     AboutUsComponent,
-    PetsComponent
+    PetsComponent,
+    UsersComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера

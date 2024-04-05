@@ -1,0 +1,13 @@
+<div class="card mt-2">
+    <div class="card-body">
+        <div class="user-info">
+            <h5 class="card-title">{{user.name}}</h5>
+            <span class="card-text">Salary: {{user.salary | number:'1.2-2'}}</span>
+            <span class="card-text">Date: {{user.bdDate | date}}</span>
+        </div>
+        <div class="btn-settings mt-2">
+            <button (click)="delete.emit()" class="btn btn-danger">Delete</button>
+            <button (click)="edit.emit()" class="btn btn-primary ms-2">Edit</button>
+        </div>
+    </div>
+</div>

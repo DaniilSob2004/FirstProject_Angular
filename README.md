@@ -1,3 +1,7 @@
+  - HW 5
+
+![hw_5](https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/a334b9c0-1863-4d2b-88d1-d73672ce4464)
+
   - HW 4
 
 ![hw_4](https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/41085311-96d6-4975-ad85-e6aa8feb5187)

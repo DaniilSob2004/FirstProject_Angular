@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="text-center">
+                <h3>User</h3>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label class="control-label">Name:</label>
+                    <input class="form-control" [(ngModel)]="curUser.name" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Salary:</label>
+                    <input type="number" class="form-control" [(ngModel)]="curUser.salary" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Date:</label>
+                    <input type="date" class="form-control" [(ngModel)]="curUser.bdDate" />
+                </div>
+                <br />
+                <div class="form-group">
+                    @if (isEditInd != -1) {
+                        <button (click)="saveEdit()" class="btn btn-primary">Save</button>
+                    } @else {
+                        <button (click)="add()" class="btn btn-primary">Add</button>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 users-block">
+            @for(user of users; track $index) {
+                <app-user
+                [user]="user"
+                (delete)="delete($index)"
+                (edit)="edit($index)">
+                </app-user>
+            }
+        </div>
+    </div>
+</div>

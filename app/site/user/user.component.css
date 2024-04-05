@@ -1,0 +1,8 @@
+.card {
+    background-color: rgb(199, 225, 255);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
