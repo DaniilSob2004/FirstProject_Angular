@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProviderComponent } from './provider/provider.component';
 import { PwBindingComponent } from './pw-binding/pw-binding.component';
 import { BookComponent } from './book/book.component';
 import { SeeWorldComponent } from './see-world/see-world.component';
@@ -16,12 +15,13 @@ import { TextEditorComponent } from './text-editor/text-editor.component';
 import { ChoiceIphoneComponent } from './choice-iphone/choice-iphone.component';
 import { HomeComponent } from './site/home/home.component';
 import { ContactComponent } from './site/contact/contact.component';
-import { FeaturesComponent } from './site/features/features.component';
 import { NavMenuComponent } from './site/nav-menu/nav-menu.component';
 import { AboutUsComponent } from './site/about-us/about-us.component';
 import { PetsComponent } from './site/pets/pets.component';
 import { UsersComponent } from './site/users/users.component';
 import { UserComponent } from './site/user/user.component';
+import { TestPipeComponent } from './test-pipe/test-pipe.component';
+import { FilterPipe } from './filter.pipe';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -41,7 +41,6 @@ import { UserComponent } from './site/user/user.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    ProviderComponent,
     PwBindingComponent,
     BookComponent,
     SeeWorldComponent,
@@ -49,12 +48,13 @@ import { UserComponent } from './site/user/user.component';
     ChoiceIphoneComponent,
     HomeComponent,
     ContactComponent,
-    FeaturesComponent,
     NavMenuComponent,
     AboutUsComponent,
     PetsComponent,
     UsersComponent,
-    UserComponent
+    UserComponent,
+    TestPipeComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
