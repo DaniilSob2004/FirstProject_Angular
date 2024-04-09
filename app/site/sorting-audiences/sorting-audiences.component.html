@@ -1,0 +1,19 @@
+<div>
+    <h5>Sorting</h5>
+    <div class="filters-block">
+        <button>Sort by Capacity</button>
+        <button>Sort by Name</button>
+        <select>
+            <option>All</option>
+            @for(group of groups; track $index) {
+                <option>{{group.title}}</option>
+            }
+        </select>
+        <select>
+            <option>All Faculties</option>
+            @for(group of faculties; track $index) {
+                <option>{{group.title}}</option>
+            }
+        </select>
+    </div>
+</div>

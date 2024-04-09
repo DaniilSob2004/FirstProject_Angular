@@ -1,0 +1,38 @@
+<div class="container font-size">
+    <div class="row">
+        <div class="col-12 filters-block">
+            <h5>Sorting</h5>
+            <div class="d-flex flex-wrap justify-content-between">
+                <button class="btn btn-secondary" (click)="sortByCapacity()">Sort by Capacity</button>
+                <button class="btn btn-secondary" (click)="sortByName()">Sort by Name</button>
+                <select class="p-2" (change)="filterByGroup($event)">
+                    <option [value]="-1">All</option>
+                    @for(group of groups; track $index) {
+                        <option [value]="$index">{{group.title}}</option>
+                    }
+                </select>
+                <select class="p-2" (change)="filterByFaculty($event)">
+                    <option [value]="-1">All Faculties</option>
+                    @for(group of faculties; track $index) {
+                        <option [value]="$index">{{group.title}}</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            @for(audience of audiences |
+                filtersAudience:
+                sortFunc:
+                selectedFacultyIndex; track $index) {
+                <div class="element">
+                    <span class="title">{{audience.title}}</span>
+                    <span>{{getFacultyById(audience.facultyId)}}</span>
+                    <span>Capacity: {{audience.capacity}}</span>
+                </div>
+            }
+        </div>
+    </div>
+</div>

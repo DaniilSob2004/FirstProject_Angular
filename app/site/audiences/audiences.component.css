@@ -1,0 +1,24 @@
+.font-size {
+    font-size: 0.92em;
+    letter-spacing: 0.5px;
+}
+
+.filters-block {
+    margin-bottom: 10px;
+}
+.filters-block div {
+    width: 65%;
+}
+
+.element {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.title {
+    color: rgb(138, 175, 255);
+    font-weight: bold;
+}

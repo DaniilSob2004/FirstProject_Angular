@@ -22,6 +22,10 @@ import { UsersComponent } from './site/users/users.component';
 import { UserComponent } from './site/user/user.component';
 import { TestPipeComponent } from './test-pipe/test-pipe.component';
 import { FilterPipe } from './filter.pipe';
+import { UniversityComponent } from './site/university/university.component';
+import { AudiencesComponent } from './site/audiences/audiences.component';
+import { SortingAudiencesComponent } from './site/sorting-audiences/sorting-audiences.component';
+import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -54,7 +58,11 @@ import { FilterPipe } from './filter.pipe';
     UsersComponent,
     UserComponent,
     TestPipeComponent,
-    FilterPipe
+    FilterPipe,
+    UniversityComponent,
+    AudiencesComponent,
+    SortingAudiencesComponent,
+    FiltersAudiencePipe
   ],
   imports: [
     BrowserModule,  // для использования модели браузера

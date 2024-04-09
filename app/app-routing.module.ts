@@ -6,6 +6,7 @@ import { ContactComponent } from './site/contact/contact.component';
 import { AboutUsComponent } from './site/about-us/about-us.component';
 import { PetsComponent } from './site/pets/pets.component';
 import { UsersComponent } from './site/users/users.component';
+import { UniversityComponent } from './site/university/university.component';
 
 // Определяет маршруты приложения.
 // Каждый объект Route содержит инфу о том, как соответ. URL-адрес должен
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "about", component: AboutUsComponent },
   { path: "pets", component: PetsComponent },
-  { path: "users", component: UsersComponent }
+  { path: "users", component: UsersComponent },
+  { path: "university", component: UniversityComponent }
 ];
 
 @NgModule({
