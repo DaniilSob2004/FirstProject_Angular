@@ -27,11 +27,7 @@
                 filtersAudience:
                 sortFunc:
                 selectedFacultyIndex; track $index) {
-                <div class="element">
-                    <span class="title">{{audience.title}}</span>
-                    <span>{{getFacultyById(audience.facultyId)}}</span>
-                    <span>Capacity: {{audience.capacity}}</span>
-                </div>
+                <app-audience [audience]="audience"></app-audience>
             }
         </div>
     </div>

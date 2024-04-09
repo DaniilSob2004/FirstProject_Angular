@@ -21,11 +21,14 @@ import { PetsComponent } from './site/pets/pets.component';
 import { UsersComponent } from './site/users/users.component';
 import { UserComponent } from './site/user/user.component';
 import { TestPipeComponent } from './test-pipe/test-pipe.component';
-import { FilterPipe } from './filter.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 import { UniversityComponent } from './site/university/university.component';
 import { AudiencesComponent } from './site/audiences/audiences.component';
 import { SortingAudiencesComponent } from './site/sorting-audiences/sorting-audiences.component';
 import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
+
+import { AudiencesService } from './services/audiences.service';
+import { AudienceComponent } from './site/audience/audience.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -62,7 +65,8 @@ import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
     UniversityComponent,
     AudiencesComponent,
     SortingAudiencesComponent,
-    FiltersAudiencePipe
+    FiltersAudiencePipe,
+    AudienceComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
@@ -70,7 +74,8 @@ import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
     FormsModule  // для 2-ух сторонней привязке
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    AudiencesService
   ],
   bootstrap: [AppComponent]  // самый первый подключенный компонент
 })

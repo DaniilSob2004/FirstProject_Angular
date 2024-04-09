@@ -11,7 +11,6 @@ export class AudiencesComponent {
   audiences: any[] = [];
   faculties: any[] = [];
   groups: any[] = [];
-
   sortFunc: (a: any, b: any) => any = (a, b) => 0;
   selectedFacultyIndex: number = -1;
 
@@ -22,10 +21,6 @@ export class AudiencesComponent {
 
   ngOnInit(): void {
     this.audiences = this.audiencesService.audiences;
-  }
-
-  getFacultyById(id: number): string {
-    return this.audiencesService.getFacultyById(id);
   }
 
   sortByCapacity() {
