@@ -24,7 +24,6 @@ import { TestPipeComponent } from './test-pipe/test-pipe.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { UniversityComponent } from './site/university/university.component';
 import { AudiencesComponent } from './site/audiences/audiences.component';
-import { SortingAudiencesComponent } from './site/sorting-audiences/sorting-audiences.component';
 import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
 
 import { AudiencesService } from './services/audiences.service';
@@ -64,7 +63,6 @@ import { AudienceComponent } from './site/audience/audience.component';
     FilterPipe,
     UniversityComponent,
     AudiencesComponent,
-    SortingAudiencesComponent,
     FiltersAudiencePipe,
     AudienceComponent
   ],

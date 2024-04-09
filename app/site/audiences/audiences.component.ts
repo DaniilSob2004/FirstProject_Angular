@@ -33,6 +33,7 @@ export class AudiencesComponent {
 
   filterByGroup(event: any) {
     const index = Number(event.target.value);
+    // this.groups[index].amountStud
     this.selectedFacultyIndex = index !== -1 ? this.groups[index].facultyId : -1;
   }
 
