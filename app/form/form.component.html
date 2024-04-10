@@ -1,0 +1,77 @@
+<div class="container">
+    <form (ngSubmit)="submitForm(myform)" #myform="ngForm">
+        <div class="form-group"
+            [ngClass]="{'has-error': email.invalid && email.touched}">
+            <label>Email</label>
+            <input
+              class="form-control"
+              type="text"
+              ngModel
+              name="email"
+              required
+              email
+              #email="ngModel">
+            @if(email.invalid && email.touched) {
+                <p>Введите корректный email</p>
+            }
+        </div>
+
+        <div class="form-group">
+            <label>Пароль</label>
+            <input
+              class="form-control"
+              type="password"
+              ngModel
+              name="pass"
+              required
+              pattern="\w{4,20}"
+              #password="ngModel">
+            @if(password.invalid && password.touched) {
+                <p>Введите корректный пароль</p>
+            }
+        </div>
+        <div class="form-group">
+            <label for="confirmPass">confirmPass</label>
+            <input 
+                class="form-control"
+                type="text"
+                ngModel
+                name="confirmPass"
+                required
+                #confirmPass="ngModel">
+        </div>
+
+        <div class="form-group">
+            <label>Выберите язык</label>
+            <select
+              class="form-control"
+              [(ngModel)]="defaultLang"
+              name="lang">
+                <option value="en">Английский</option>
+                <option value="fr">Французский</option>
+                <option value="de">Немецкий</option>
+            </select>
+        </div>
+
+        <div class="radio" *ngFor="let ans of answers">
+            <label>
+                <input
+                  type="radio"
+                  [value]="ans.type"
+                  [(ngModel)]="defaultAnswer"
+                  name="answ"> {{ans.text}}
+            </label>
+        </div>
+
+        <button
+          class="btn btn-success"
+          type="submit"
+          [disabled]="!myform.valid || password.value !== confirmPass.value">Сохранить</button>
+    </form>
+</div>
+
+@if(isSubmited) {
+    <div>
+        <pre>{{formData | json}}</pre>
+    </div>
+}

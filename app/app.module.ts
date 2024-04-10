@@ -28,6 +28,7 @@ import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
 
 import { AudiencesService } from './services/audiences.service';
 import { AudienceComponent } from './site/audience/audience.component';
+import { FormComponent } from './form/form.component';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -64,7 +65,8 @@ import { AudienceComponent } from './site/audience/audience.component';
     UniversityComponent,
     AudiencesComponent,
     FiltersAudiencePipe,
-    AudienceComponent
+    AudienceComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
