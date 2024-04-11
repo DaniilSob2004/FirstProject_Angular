@@ -24,11 +24,14 @@ import { TestPipeComponent } from './test-pipe/test-pipe.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { UniversityComponent } from './site/university/university.component';
 import { AudiencesComponent } from './site/audiences/audiences.component';
+import { AudienceComponent } from './site/audience/audience.component';
+import { FormComponent } from './form/form.component';
+import { SurveyFormComponent } from './site/survey-form/survey-form.component';
+
 import { FiltersAudiencePipe } from './pipes/filters-audience.pipe';
 
 import { AudiencesService } from './services/audiences.service';
-import { AudienceComponent } from './site/audience/audience.component';
-import { FormComponent } from './form/form.component';
+import { SurveyFormService } from './services/survey-form.service';
 
 /*
 Декоратор NgModule() — это функция, принимает один объект метаданных, свойства которого описывают модуль.
@@ -66,7 +69,8 @@ import { FormComponent } from './form/form.component';
     AudiencesComponent,
     FiltersAudiencePipe,
     AudienceComponent,
-    FormComponent
+    FormComponent,
+    SurveyFormComponent
   ],
   imports: [
     BrowserModule,  // для использования модели браузера
@@ -75,7 +79,8 @@ import { FormComponent } from './form/form.component';
   ],
   providers: [
     provideClientHydration(),
-    AudiencesService
+    AudiencesService,
+    SurveyFormService
   ],
   bootstrap: [AppComponent]  // самый первый подключенный компонент
 })

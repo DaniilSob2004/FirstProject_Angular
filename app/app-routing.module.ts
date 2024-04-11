@@ -7,6 +7,7 @@ import { AboutUsComponent } from './site/about-us/about-us.component';
 import { PetsComponent } from './site/pets/pets.component';
 import { UsersComponent } from './site/users/users.component';
 import { UniversityComponent } from './site/university/university.component';
+import { SurveyFormComponent } from './site/survey-form/survey-form.component';
 
 // Определяет маршруты приложения.
 // Каждый объект Route содержит инфу о том, как соответ. URL-адрес должен
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: "about", component: AboutUsComponent },
   { path: "pets", component: PetsComponent },
   { path: "users", component: UsersComponent },
-  { path: "university", component: UniversityComponent }
+  { path: "university", component: UniversityComponent },
+  { path: "surveyform", component: SurveyFormComponent }
 ];
 
 @NgModule({

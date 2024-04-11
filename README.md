@@ -1,3 +1,10 @@
+  - HW 7
+
+<div style="display: flex;">
+    <img src="https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/282904d5-88b3-4d03-9483-790a68d99a28" alt="hw_7_2" width="400" />
+    <img src="https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/280c25e9-c6ae-4e7d-8acd-1c4b9b6d6db7" alt="hw_7_1" width="400" />
+</div>
+
   - HW 6
 
 ![hw_6](https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/b9ff6578-710e-4d17-bf97-883c0332e411)

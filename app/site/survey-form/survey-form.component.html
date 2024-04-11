@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+                <div class="header">
+                    <label>Survey Form</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Surname</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      ngModel
+                      name="surname"
+                      required 
+                      [minlength]="minNameSymbol"
+                      #surname="ngModel">
+                      @if(surname.invalid && surname.touched) {
+                        <span class="incorrect-text">Minimum number of characters: {{minNameSymbol}}</span>
+                      }
+                </div>
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      ngModel
+                      name="name"
+                      #name="ngModel">
+                </div>
+
+                <div class="form-group">
+                    <label>Group</label>
+                    <select
+                      class="form-control"
+                      ngModel
+                      name="group"
+                      #group="ngModel"
+                      required>
+                        @for(group of groups; track group.id) {
+                            <option [ngValue]="group">{{group.title}}</option>
+                        }
+                    </select>
+                    @if(group.invalid && group.touched) {
+                        <span class="incorrect-text">You haven't selected a group</span>
+                    }
+                </div>
+
+                <div class="form-group">
+                    <label>Subject</label>
+                    <select
+                      class="form-control"
+                      [(ngModel)]="defSubject"
+                      name="subject">
+                        @for(subject of subjects; track subject.id) {
+                            <option [ngValue]="subject">{{subject.title}}</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="radios">
+                    @for(gender of genders; track $index) {
+                        <label>
+                            <input
+                              type="radio"
+                              [value]="gender"
+                              name="gender"
+                              [(ngModel)]="defGender">
+                            <span>{{gender}}</span>
+                        </label>
+                    }
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input
+                          type="checkbox"
+                          name="agree"
+                          [(ngModel)]="isAgree">
+                        I agree to sending data
+                    </label>
+                </div>
+
+                <button
+                    class="btn btn-success"
+                    type="submit"
+                    [disabled]="!form.valid || !isAgree">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
