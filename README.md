@@ -1,3 +1,7 @@
+  - HW 8
+
+![hw_8](https://github.com/DaniilSob2004/FirstProject_Angular/assets/106149184/bba44b93-e4f0-405e-a374-77175ec1049f)
+
   - HW 7
 
 <div style="display: flex;">
